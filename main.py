@@ -24,7 +24,7 @@ def get_video_transcript(video_id):
 
 def clean_transcript(text):
     """Cleans the transcript by removing timestamps and unwanted characters."""
-    text = re.sub(r'\d{1,2}:\d{2}(:\d{2})?', '', text)  # Remove timestamps
+    text = re.sub(r'\d{1,2}:\d{2}(:\d{2})?', '', text)  # Remove timestamps ss
     text = re.sub(r'[^a-zA-Z0-9\s.,?!]', '', text)  # Keep basic punctuation
     text = re.sub(r'\s+', ' ', text).strip()  # Remove extra spaces
     return text
