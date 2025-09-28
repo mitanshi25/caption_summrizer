@@ -88,4 +88,5 @@ if transcript_text:
             file.write(summary_gpt)
 
     # Add a small delay to prevent API rate limits more 
+    # Add a small delay to prevent API rate limits more 1
     time.sleep(2)
